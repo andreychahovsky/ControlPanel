@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Hub F</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="blue-grey" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Hub F</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-grey-text">Control panel</h1>
+      <br><br>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-grey-text"><i class="material-icons">network_check</i></h2>
+            <h5 class="center">Network statistics</h5>
+            <ul>
+            	<li>Last access: <span id="lastAccess">12</span> <span> seconds ago</span></li>
+            	<li>From IP: <span id="fromIP">130.180.208.93</span></li>
+            </ul>
+          </div>
+        </div> 
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-grey-text"><i class="material-icons">ac_unit</i></h2>
+            <h5 class="center">Temperature settings</h5>
+            <ul>
+            	<li>Current temperature: <span id="currentTemperature">14</span></li>
+            	<li><div>Temperature limit: </div></li>
+            	<li>
+                  <form>
+                    <input type="number" name="" class="col s12" min="-10" max="50" value="25" style="text-align:center;">
+                    <br><br><br>
+            		<button class="btn-flat col s12" type="submit" name="action">Ok</button>
+            		<br>
+            	  </form>
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-grey-text"><i class="material-icons">refresh</i></h2>
+            <h5 class="center">Reboot the Rig</h5>
+            <ul>
+            	<li>Current value: <span id="currentRebootValue">Ok</span></li>
+            	<li><div>Reboot: </div></li>
+            	<li>
+                  <form>
+                    <select class="input-field col s12">
+                      <option value="" disabled selected>Choose the Rig</option>
+                      <option value="1">8x1070Ti-1</option>
+                      <option value="2">8x1070Ti-2</option>
+                      <option value="3">8x1070Ti-3</option>
+                    </select>
+                    <br><br><br><br>
+                    <button class="btn-flat col s12" type="submit" name="action">Ok</button>
+                  </form>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--   End of Icon Section   -->
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer blue-grey">
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
